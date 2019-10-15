@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" binding="early" name="state" qt:editorversion="4.10.0" xmlns:qt="http://www.qt.io/2015/02/scxml-ext" initial="red">
+    <qt:editorinfo initialGeometry="267.11;62.11;-20;-20;40;40"/>
+    <state id="red">
+        <qt:editorinfo geometry="267.11;165.64;-60;-50;120;100" scenegeometry="267.11;165.64;207.11;115.64;120;100"/>
+        <transition type="external" event="goGreen" target="green"/>
+        <onentry>
+            <send event="goGreen" delay="2s"/>
+        </onentry>
+    </state>
+    <state id="green">
+        <qt:editorinfo geometry="267.11;323.01;-60;-50;120;100" scenegeometry="267.11;323.01;207.11;273.01;120;100"/>
+        <transition type="external" event="goBlue" target="blue"/>
+        <onentry>
+            <send event="goBlue" delay="2s"/>
+        </onentry>
+    </state>
+    <state id="blue">
+        <qt:editorinfo geometry="267.11;494.89;-60;-50;120;100" scenegeometry="267.11;494.89;207.11;444.89;120;100"/>
+        <transition type="external" event="goRed" target="red">
+            <qt:editorinfo localGeometry="135.62;0;135.62;-328.16"/>
+        </transition>
+        <onentry>
+            <send event="goRed" delay="2s"/>
+        </onentry>
+    </state>
+</scxml>
