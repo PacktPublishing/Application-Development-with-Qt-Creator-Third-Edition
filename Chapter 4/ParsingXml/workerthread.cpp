@@ -3,6 +3,8 @@
 WorkerThread::WorkerThread(QObject* owner)
 {
     this->setParent(owner);
+    mNetManager = new QNetworkAccessManager(this);
+    connect(mNetManager, &QNetworkAccessManager::finished, this, &WorkerThread::handleNetFinished);
 }
 
 void WorkerThread::run()
@@ -31,14 +33,19 @@ void WorkerThread::run()
                 QString tag = xml.name().toString().toLower();
                 fieldName = tag;
                 gotValue = false;
+                qDebug() << "tag" << tag;
             }
             break;
             case QXmlStreamReader::Characters:
             // Save aside any text
             if (!gotValue)
             {
-                value = xml.text().toString();
-                gotValue = true;
+                value = xml.text().toString().simplified();
+                if (value != "")
+                {
+                    gotValue = true;
+                    qDebug() << "value" << value;
+                }
             }
             break;
             case QXmlStreamReader::EndElement:
