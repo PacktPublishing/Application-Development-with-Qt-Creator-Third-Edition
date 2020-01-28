@@ -18,15 +18,17 @@ void WorkerThread::run()
     bool gotValue = false;
     QMap<QString, QString> result;
 
-    xml.setDevice(mReply);
-    while(!xml.atEnd())
+	xml.setDevice(mReply);
+
+	while(!xml.atEnd())
     {
         // If we've been cancelled, stop processing.
-        if (mCancelled) break;
+		if (mCancelled) break;
 
         type = xml.readNext();
-        bool gotEntry = false;
-        switch(type)
+		bool gotEntry = false;
+
+		switch(type)
         {
             case QXmlStreamReader::StartElement:
             {
@@ -34,33 +36,37 @@ void WorkerThread::run()
                 fieldName = tag;
                 gotValue = false;
                 qDebug() << "tag" << tag;
+				break;
             }
-            break;
             case QXmlStreamReader::Characters:
-            // Save aside any text
-            if (!gotValue)
-            {
-                value = xml.text().toString().simplified();
-                if (value != "")
-                {
-                    gotValue = true;
-                    qDebug() << "value" << value;
-                }
-            }
-            break;
+			{
+				// Save aside any text
+				if (!gotValue)
+				{
+					value = xml.text().toString().simplified();
+					if (value != "")
+					{
+						gotValue = true;
+						qDebug() << "value" << value;
+					}
+				}
+				break;
+			}
             case QXmlStreamReader::EndElement:
-            // Save aside this value
-            if (gotEntry && gotValue)
-            {
-                result[fieldName] = value;
-            }
-            gotEntry = false;
-            gotValue = false;
-            break;
+			{
+				// Save aside this value
+				if (gotEntry && gotValue)
+				{
+					result[fieldName] = value;
+				}
+				gotEntry = false;
+				gotValue = false;
+				break;
+			}
             default:
             break;
-        }
-    }
+		}
+	}
     successful = xml.hasError() ? false : true;
 
     if (!mCancelled && successful)
@@ -92,7 +98,7 @@ void WorkerThread::cancel()
 void WorkerThread::handleNetFinished(QNetworkReply* reply)
 {
     // Start parse by starting the thread.
-    if (reply->error() == QNetworkReply::NoError)
+	if (reply->error() == QNetworkReply::NoError)
     {
         if (!this->isRunning())
         {
@@ -104,5 +110,5 @@ void WorkerThread::handleNetFinished(QNetworkReply* reply)
     {
         emit error(tr("A network error occurred."));
         qDebug() << QString("net error %1").arg(reply->error());
-    }
+	}
 }

@@ -26,7 +26,7 @@ private slots:
     void handleNetFinished(QNetworkReply* reply);
 
 private:
-    bool mCancelled;
+	bool mCancelled = false;
     QNetworkAccessManager* mNetManager;
     QNetworkReply* mReply;
 };

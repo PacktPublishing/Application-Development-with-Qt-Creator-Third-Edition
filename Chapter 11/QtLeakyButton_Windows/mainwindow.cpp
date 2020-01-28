@@ -16,7 +16,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::leakPressed()
 {
-    void *p = new char[512 * 1024];
+	void *p = new char[512 * 1024];
     m_count++;
     ui->leakCount->setText(QString::number(m_count));
 }
