@@ -1,0 +1,3 @@
+start /d "C:\Users\leezh\Desktop\Application-Development-with-Qt-Creator-Third-Edition\Chapter 14\build-Multiple_Projects-Desktop_Qt_5_13_0_MinGW_64_bit-Debug\Console\debug\" Console.exe
+start /d "C:\Users\leezh\Desktop\Application-Development-with-Qt-Creator-Third-Edition\Chapter 14\build-Multiple_Projects-Desktop_Qt_5_13_0_MinGW_64_bit-Debug\QtQuick\debug\" QtQuick.exe
+start /d "C:\Users\leezh\Desktop\Application-Development-with-Qt-Creator-Third-Edition\Chapter 14\build-Multiple_Projects-Desktop_Qt_5_13_0_MinGW_64_bit-Debug\Widget\debug\" Widget.exe
