@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="zh">
 <context>
     <name>MainWindow</name>
     <message>
@@ -11,62 +11,62 @@
     <message>
         <location filename="mainwindow.ui" line="28"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>文件</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="37"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="45"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>帮助</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="64"/>
         <source>New</source>
-        <translation type="unfinished"></translation>
+        <translation>新文件</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="69"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>保存文件</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="74"/>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>打开文件</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="79"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>退出</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="84"/>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>复制</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="89"/>
         <source>Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>粘贴</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="94"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>删除</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="99"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>关于</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="18"/>
         <source>What is your name?</source>
-        <translation type="unfinished"></translation>
+        <translation>你叫什么名字？</translation>
     </message>
 </context>
 </TS>
