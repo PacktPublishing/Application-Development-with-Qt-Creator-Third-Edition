@@ -4,7 +4,7 @@
 
 This is the code repository for [Application Development with Qt Creator - Third Edition ](https://www.packtpub.com/programming/application-development-with-qt-creator-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789951752), published by Packt.
 
-**Build cross-platform applications and GUIs using Qt 5 and C++	**
+**Build cross-platform applications and GUIs using Qt 5 and C++**
 
 ## What is this book about?
 Qt is a powerful development framework that serves as a complete toolset for building cross-platform applications, helping you reduce development time and improve productivity. Completely revised and updated to cover C++17 and the latest developments in Qt 5.12, this comprehensive guide is the third edition of Application Development with Qt Creator.
