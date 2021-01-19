@@ -1,8 +1,3 @@
-## $5 Tech Unlocked 2021!
-[Buy and download this Book for only $5 on PacktPub.com](https://www.packtpub.com/product/application-development-with-qt-creator-second-edition/9781784398675)
------
-*If you have read this book, please leave a review on [Amazon.com](https://www.amazon.com/gp/product/1784398675).     Potential readers can then use your unbiased opinion to help them make purchase decisions. Thank you. The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
-
 # Application Development with Qt Creator - Third Edition 
 
 <a href="https://www.packtpub.com/programming/application-development-with-qt-creator-third-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789951752"><img src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/7/9781789951752-original.jpeg" alt="Application Development with Qt Creator - Third Edition " height="256px" align="right"></a>
